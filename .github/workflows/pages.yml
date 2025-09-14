@@ -1,4 +1,4 @@
-# Updated workflow for building and deploying a Jekyll site to GitHub Pages
+# The Complete and Correct Workflow for Chirpy Theme
 name: Deploy Jekyll site to Pages
 
 on:
@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive # 我们依然保留这个，以防万一
+          submodules: recursive
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -30,16 +30,15 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
 
-      # --- 新增的关键步骤 ---
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # 使用一个稳定的 Node.js 版本
+          node-version: '18'
 
-      - name: Install Dependencies
-        run: npm install
-      # --- 新增步骤结束 ---
-      
+      # ★★★ The missing key step ★★★
+      - name: Install Dependencies and Build Assets
+        run: npm install && npm run build
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
