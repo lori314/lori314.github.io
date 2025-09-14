@@ -20,5 +20,5 @@ pin: true  # <--- 加上这行，这篇文章就会被置顶在主页！
 ```javascript
 // 这是一个代码块
 function greet() {
-  console.log("Hello from my new blog!");
+  console.log("Hello from my new blog!lll");
 }
