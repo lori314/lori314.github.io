@@ -14,7 +14,7 @@ title: Lori 的博客
 tagline: 探索代码与世界
 description: >-
   Lori 的个人博客，用于记录 Web 开发学习笔记、项目经验和生活感悟。
-url: "https://lori314.github.io" # <-- 务必改成你的地址
+url: "https://chirpy-img.netlify.app" # <-- 务必改成你的地址
 
 github:
   username: lori314 # <-- 务必改成你的 GitHub 用户名
@@ -80,7 +80,7 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
+# cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/commons/avatar.jpg"
