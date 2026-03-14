@@ -5,6 +5,11 @@
 #   twitter: {twitter_of_author}
 #   url: {homepage_of_author}
 # -------------------------------------
+lori:
+  name: Lori
+  twitter: 
+  url: https://lori314.github.io/
+  email: lori520314@gmail.com
 
 cotes:
   name: Cotes Chung
